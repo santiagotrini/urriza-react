@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import db from './db.json';
+import Question from './Question.js';
 
-function App() {
+const App = () => {
+
+  // console.log(db);
+
+  const [questions, setQuestions] = useState(db.data)
+  const [search, setSearch] = useState('')
+
+  // console.log(questions);
+
+
+
+  const handleClick = e => {
+    // console.log(search);
+    if (!search) {
+      setQuestions(db.data);
+      return;
+    }
+    const filteredQuestions = db.data.filter(question =>
+      question.topic === search
+    );
+    setQuestions(filteredQuestions);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Urriza React</h1>
+      <input onChange={e => setSearch(e.target.value)} type="text" placeholder="Filtrar por tema..." />
+      <button onClick={handleClick}>Buscar</button>
+      <div>
+        {questions.map((question,idx) => (
+          <Question key={idx} question={question} />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;

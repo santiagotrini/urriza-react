@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "text": "2 + 2?",
+      "topic": "matematica",
+      "answers": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "3", "correct": false },
+        { "text": "4", "correct": true }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "3 + 2?",
+      "topic": "matematica",
+      "answers": [
+        { "text": "1", "correct": false },
+        { "text": "2", "correct": false },
+        { "text": "3", "correct": false },
+        { "text": "5", "correct": true }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "e4 e5?",
+      "topic": "ajedrez",
+      "answers": [
+        { "text": "peon de rey", "correct": true },
+        { "text": "gambito de dama", "correct": false },
+        { "text": "gambito de rey", "correct": false },
+        { "text": "ruy lopez", "correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "1: d4 f5 2: c4 g6?",
+      "topic": "ajedrez",
+      "answers": [
+        { "text": "apertura holandesa", "correct": true },
+        { "text": "defensa francesa", "correct": false },
+        { "text": "defensa siciliana", "correct": false },
+        { "text": "defensa petrov", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "quien tiene mas balones de oro?",
+      "topic": "futbol",
+      "answers": [
+        { "text": "messi", "correct": true },
+        { "text": "messirve", "correct": false },
+        { "text": "cristiano", "correct": false },
+        { "text": "maradona", "correct": false }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "intervalo de do a sol?",
+      "topic": "musica",
+      "answers": [
+        { "text": "antezana", "correct": false },
+        { "text": "quinta", "correct": true },
+        { "text": "septima", "correct": false },
+        { "text": "octava", "correct": true }
+      ]
+    }
+  ]
+}
