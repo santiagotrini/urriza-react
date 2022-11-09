@@ -12,6 +12,21 @@ code {
     monospace;
 }
 
+.btn-close {
+  background: transparent;
+  border: none;
+  font-size: 36px;
+}
+
+.Modal {
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 30px;
+  /* display: flex; */
+  /* flex-direction: row-reverse;
+  justify-content: space-between; */
+}
+
 .Question {
   border: 1px solid gray;
   box-shadow: 5px 5px 5px gray;
